@@ -11,22 +11,22 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "DEVICES")
-public class Devices {
+public class Device {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int deviceId;
 	
-	@Column(name = "DeviceName")
+	@Column(name = "device_name")
 	private String deviceName;
 	
-	@Column(name = "DeviceType")
+	@Column(name = "device_type")
 	private String deviceType;
 	
-	@Column(name = "PlanID")
+	@Column(name = "plan_id")
 	private int planId;
 
-	public Devices(int deviceId, String deviceName, String deviceType, int planId) {
+	public Device(int deviceId, String deviceName, String deviceType, int planId) {
 		super();
 		this.deviceId = deviceId;
 		this.deviceName = deviceName;
@@ -34,14 +34,14 @@ public class Devices {
 		this.planId = planId;
 	}
 
-	public Devices(String deviceName, String deviceType, int planId) {
+	public Device(String deviceName, String deviceType, int planId) {
 		super();
 		this.deviceName = deviceName;
 		this.deviceType = deviceType;
 		this.planId = planId;
 	}
 
-	public Devices() {
+	public Device() {
 		super();
 	}
 
@@ -90,7 +90,7 @@ public class Devices {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Devices other = (Devices) obj;
+		Device other = (Device) obj;
 		return deviceId == other.deviceId && Objects.equals(deviceName, other.deviceName)
 				&& Objects.equals(deviceType, other.deviceType) && planId == other.planId;
 	}

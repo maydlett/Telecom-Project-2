@@ -17,16 +17,16 @@ public class Plan {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int planId;
 	
-	@Column(name = "PlanName")
+	@Column(name = "plan_name")
 	private String planName;
 	
-	@Column(name = "PlanPrice")
+	@Column(name = "plan_price")
 	private double planPrice;
 	
-	@Column(name = "PlanNumLines")
+	@Column(name = "plan_numlines")
 	private int planNumLines;
 	
-	@Column(name = "CustomerID")
+	@Column(name = "customer_id")
 	private int customerId;
 
 	public Plan(int planId, String planName, double planPrice, int planNumLines, int customerId) {
