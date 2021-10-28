@@ -1,0 +1,148 @@
+#user{
+    padding: 30px;
+}
+
+.user {
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px
+}
+
+.user header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3989c6
+}
+
+.user .company-details {
+    text-align: right
+}
+
+.user .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.user .contacts {
+    margin-bottom: 20px
+}
+
+.user .user-to {
+    text-align: left
+}
+
+.user .user-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.user .user-details {
+    text-align: right
+}
+
+.user .user-details .user-id {
+    margin-top: 0;
+    color: #3989c6
+}
+
+.user main {
+    padding-bottom: 50px
+}
+
+.user main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.user main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.user main .notices .notice {
+    font-size: 1.2em
+}
+
+.user table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px
+}
+
+.user table td,.user table th {
+    padding: 15px;
+    background: #eee;
+    border-bottom: 1px solid #fff
+}
+
+.user table th {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.user table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #3989c6;
+    font-size: 1.2em
+}
+
+.user table .qty,.user table .total,.user table .unit {
+    text-align: right;
+    font-size: 1.2em
+}
+
+.user table .no {
+    color: #fff;
+    font-size: 1.6em;
+    background: #3989c6
+}
+
+.user table .unit {
+    background: #ddd
+}
+
+.user table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.user table tbody tr:last-child td {
+    border: none
+}
+
+.user table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-top: 1px solid #aaa
+}
+
+.user table tfoot tr:first-child td {
+    border-top: none
+}
+
+.user table tfoot tr:last-child td {
+    color: #3989c6;
+    font-size: 1.4em;
+    border-top: 1px solid #3989c6
+}
+
+.user table tfoot tr td:first-child {
+    border: none
+}
+
+.user footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 8px 0
+}
