@@ -45,6 +45,7 @@ public class Plan {
 		this.planNumLines = planNumLines;
 		this.customerId = customerId;
 	}
+	
 
 	public Plan() {
 		super();
