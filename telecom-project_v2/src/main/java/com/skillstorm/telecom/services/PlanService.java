@@ -25,5 +25,9 @@ public class PlanService {
 		Plan newPlan = repo.save(plan);
 		return newPlan;
 	}
+	
+	public List<Plan> findTotal(int deviceId, int planId) {
+		return repo.findTotal(deviceId,planId);
+	}
 
 }

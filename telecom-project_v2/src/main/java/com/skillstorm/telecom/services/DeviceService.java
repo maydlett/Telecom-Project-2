@@ -29,9 +29,9 @@ public class DeviceService {
 		return repo.findByPlan(planId);
 	}
 	
-	public List<Device> findTotal(int deviceId, int planId) {
-		return repo.findTotal(deviceId,planId);
-	}
+//	public List<Device> findTotal(int deviceId, int planId) {
+//		return repo.findTotal(deviceId,planId);
+//	}
 	
 	
 }
