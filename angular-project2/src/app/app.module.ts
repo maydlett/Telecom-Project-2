@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlansComponent } from './plans/plans.component';
 import { HomeComponent } from './home/home.component';
-import { UserComponent } from './user/user.component';
 import { CartComponent } from './cart/cart.component';
+import { DevicesComponent } from './devices/devices.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlansComponent,
     HomeComponent,
-    UserComponent,
-    CartComponent
+    CartComponent,
+    DevicesComponent
   ],
   imports: [
     BrowserModule,
