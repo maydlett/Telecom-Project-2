@@ -45,6 +45,11 @@ public class Plan {
 		this.planNumLines = planNumLines;
 		this.customerId = customerId;
 	}
+	
+	public Plan(int sum ) {
+		super();
+		this.planPrice = sum;
+	}
 
 	public Plan() {
 		super();
