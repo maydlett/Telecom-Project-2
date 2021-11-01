@@ -46,10 +46,6 @@ public class Plan {
 		this.customerId = customerId;
 	}
 	
-	public Plan(int sum ) {
-		super();
-		this.planPrice = sum;
-	}
 
 	public Plan() {
 		super();
