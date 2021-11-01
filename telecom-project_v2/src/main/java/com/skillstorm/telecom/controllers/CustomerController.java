@@ -16,8 +16,8 @@ import com.skillstorm.telecom.services.CustomerService;
 import com.skillstorm.telecom.beans.Customer;
 
 @RestController
-@RequestMapping("customers/v1")
-//@CrossOrigin("http://localhost:4200")
+@RequestMapping("customers")
+@CrossOrigin("http://localhost:4200")
 public class CustomerController {
 
 	@Autowired
