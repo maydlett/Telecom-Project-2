@@ -1,12 +1,12 @@
 CREATE SCHEMA `telecom` ;
 
 CREATE TABLE `telecom`.`customers` (
-  `customer_id` INT NOT NULL,
+  `customer_id` INT NOT NULL AUTO_INCREMENT,
   `customer_name` VARCHAR(45) NULL,
   PRIMARY KEY (`customer_id`));
   
 CREATE TABLE `telecom`.`plans` (
-  `plan_id` INT NOT NULL,
+  `plan_id` INT NOT NULL AUTO_INCREMENT,
   `plan_name` VARCHAR(45) NULL,
   `plan_price` DECIMAL(10,2) NULL,
   `plan_numlines` INT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE `telecom`.`plans` (
   FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`));
 
 CREATE TABLE `telecom`.`devices` (
-  `device_id` INT NOT NULL,
+  `device_id` INT NOT NULL AUTO_INCREMENT,
   `device_name` VARCHAR(45) NULL,
   `device_type` VARCHAR(45) NULL,
   `plan_id` INT NOT NULL,
