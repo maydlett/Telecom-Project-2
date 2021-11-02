@@ -25,8 +25,11 @@ public class Device {
 	
 	@Column(name = "plan_id")
 	private int planId;
+	
+	@Column(name = "device_number")
+	private String deviceNumber;
 
-	public Device(int deviceId, String deviceName, String deviceType, int planId) {
+	public Device(int deviceId, String deviceName, String deviceType, int planId, String deviceNumber ) {
 		super();
 		this.deviceId = deviceId;
 		this.deviceName = deviceName;
@@ -51,6 +54,14 @@ public class Device {
 
 	public void setDeviceId(int deviceId) {
 		this.deviceId = deviceId;
+	}
+	
+	public String getDeviceNumber() {
+		return deviceNumber;
+	}
+
+	public void setDeviceNumber(String deviceNumber) {
+		this.deviceNumber = deviceNumber;
 	}
 
 	public String getDeviceName() {

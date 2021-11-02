@@ -32,7 +32,7 @@ public class PlanController {
 		return new ResponseEntity<>(allPlans, HttpStatus.OK);
 	}
 	
-	@PostMapping("plan")
+	@PostMapping("/cart")
 	public ResponseEntity<Plan> save(@RequestBody Plan plan) {
 		System.out.println("save() " + plan);
 		
