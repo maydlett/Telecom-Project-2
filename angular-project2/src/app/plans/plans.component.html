@@ -35,15 +35,14 @@
                   <h4> 29 <span class="sup">$</span> </h4> 
                 </div>
                 <div class="deal-bottom">
-                  <ul class="deal-item">
-                    <li>10 GB Storage</li>
-                    <li>10 Email address</li>
-                    <li>10 Domain names</li>
-                    <li>500 gb Bandwidth </li>
-                    <li>24 hour Support </li>
+                  <ul class="deal-item" >
+                    <li *ngFor="let item of listA | keyvalue" >
+                       <b>{{item.key}}</b> : <b>{{item.value}}</b>
+                    </li>
+
                   </ul>
                   <div class="btn-area">
-                    <a class="nav-link active" routerLink="/cart">Sign Up</a>			
+                    <a class="nav-link active" (click)="planA()" routerLink="/plans/cart">Sign Up</a>			
                   </div>
                 </div>
               </div>
@@ -56,14 +55,12 @@
                 </div>
                 <div class="deal-bottom">
                   <ul class="deal-item">
-                    <li>50 GB Storage</li>
-                    <li>50 Email address</li>
-                    <li>50 Domain names</li>
-                    <li>1 TB Bandwidth </li>
-                    <li>24 hour Support </li>
+                    <li *ngFor="let item of listB | keyvalue" >
+                      <b>{{item.key}}</b> : <b>{{item.value}}</b>
+                   </li>
                   </ul>
                   <div class="btn-area">
-                    <a class="nav-link active" routerLink="/cart">Sign Up</a>			
+                    <a class="nav-link active"  (click)="planB()" routerLink="/plans/cart">Sign Up</a>			
                   </div>
                 </div>
               </div>
@@ -76,14 +73,12 @@
                 </div>
                 <div class="deal-bottom">
                   <ul class="deal-item">
-                    <li>100 GB Storage</li>
-                    <li>100 Email address</li>
-                    <li>100 Domain names</li>
-                    <li>5 TB Bandwidth </li>
-                    <li>24 hour Support </li>
+                    <li *ngFor="let item of listC | keyvalue" >
+                      <b>{{item.key}}</b> : <b>{{item.value}}</b>
+                   </li>
                   </ul>
                   <div class="btn-area">
-                    <a class="nav-link active" routerLink="/cart">Sign Up</a>			
+                    <a class="nav-link active" (click)="planC()" routerLink="/plans/cart">Sign Up</a>			
                   </div>
                 </div>
               </div>

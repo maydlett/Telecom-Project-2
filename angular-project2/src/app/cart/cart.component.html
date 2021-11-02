@@ -30,21 +30,25 @@
 						 						<div class="row">
 							 						<div class="col-md-5 product-name">
 							 							<div class="product-name">
-								 							<a href="#">PLACEHOLDER</a>
+								 							<!-- <a href="#">PLACEHOLDER</a>
 								 							<div class="product-info">
 									 							<div>Display: <span class="value">5 inch</span></div>
 									 							<div>RAM: <span class="value">4GB</span></div>
 									 							<div>Memory: <span class="value">32GB</span></div>
-									 						</div>
+									 						</div> -->
+															 <div *ngFor="let item of planList | keyvalue" >
+																<b>{{item.key}}</b> : <b>{{item.value}}</b>
+															 </div>
+														
 									 					</div>
 							 						</div>
-							 						<div class="col-md-4 quantity">
+							 						<!-- <div class="col-md-4 quantity">
 							 							<label for="quantity">Quantity:</label>
 							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
 							 						</div>
 							 						<div class="col-md-3 price">
 							 							<span>$120</span>
-							 						</div>
+							 						</div> -->
 							 					</div>
 							 				</div>
 					 					</div>
@@ -119,7 +123,7 @@
 			 					<div class="summary-item"><span class="text">Discount</span><span class="price">$0</span></div>
 			 					<div class="summary-item"><span class="text">Shipping</span><span class="price">$0</span></div>
 			 					<div class="summary-item"><span class="text">Total</span><span class="price">$360</span></div>
-			 					<button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+			 					<button type="button" class="btn btn-primary btn-lg btn-block" (click)="done()" routerLink="/devices">Done</button>
 				 			</div>
 			 			</div>
 		 			</div> 
