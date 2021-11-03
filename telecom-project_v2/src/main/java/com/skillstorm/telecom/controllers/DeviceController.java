@@ -40,24 +40,18 @@ public class DeviceController {
 		return new ResponseEntity<>(newDevice, HttpStatus.CREATED); 		
 	}
 	
-//	@DeleteMapping("/{name}")
-//	public void delete(@PathVariable("name") String name) {
-//		System.out.println("delete() " + name);
-//		 service.delete(name);
-//	}
-	
-	@DeleteMapping("")
-	public void delete(@RequestBody String name) {
+	@DeleteMapping("/{name}")
+	public void delete(@PathVariable("name") String name) {
 		System.out.println("delete() " + name);
 		 service.delete(name);
 	}
 	
-	@GetMapping("{id}")
-	public ResponseEntity<List<Device>> findByPlan(@PathVariable int id) {
-		System.out.println("findByPlan() " + id);
-
-		return new ResponseEntity<List<Device>>(service.findByPlan(id), HttpStatus.OK);
-	}
+//	@GetMapping("{id}")
+//	public ResponseEntity<List<Device>> findByPlan(@PathVariable int id) {
+//		System.out.println("findByPlan() " + id);
+//
+//		return new ResponseEntity<List<Device>>(service.findByPlan(id), HttpStatus.OK);
+//	}
 	
 	
 }

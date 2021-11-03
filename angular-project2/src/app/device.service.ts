@@ -15,6 +15,12 @@ export class DeviceService {
     return this.httpClient.get(this.url + '/devices');
   }
 
+  deleteDevice(value : String): Observable<any>{
+    console.log(value+ "---deviceservice")
+    return this.httpClient.delete(this.url + '/devices/'+ value)
+  }
+
+
   
 }
 
