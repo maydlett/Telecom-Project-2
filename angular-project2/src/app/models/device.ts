@@ -4,6 +4,7 @@ export class Device {
 	deviceType : string;
 	deviceNumber : string;
 	planId : number;
+	
 
 	
     constructor( deviceId = 0,  deviceName ="",  deviceType = "" , planId = 0, deviceNumber = "") {

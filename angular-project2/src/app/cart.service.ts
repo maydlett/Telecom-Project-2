@@ -20,24 +20,24 @@ export class CartService {
 
   
 cartA = {   
-    "planName" : "Ultimate Plan",
-    "planPrice" : 455.00,
-    "planNumLines" : 1,
+  "planName" : "Ultimate Plan",
+  "planPrice" : 455.00,
+  "planNumLines" : 1,
     "customerId" : 1
 }
 
 
 cartB = {   
-  "planName" : "aaaa",
-  "planPrice" : 455.00,
-  "planNumLines" : 1,
-  "customerId" : 1
+  "planName" : "Normal Plan",
+      "planPrice" : 300.00,
+      "planNumLines" : 1,
+  "customerId" : 1,
 }
 
 cartC = {   
-"planName" : "bbbb",
-"planPrice" : 455.00,
-"planNumLines" : 1,
+  "planName" : "Cheap Plan",
+    "planPrice" : 100.00,
+    "planNumLines" : 1,
 "customerId" : 1
 }
 

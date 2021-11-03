@@ -13,25 +13,31 @@ export class CartComponent implements OnInit {
 
   planList = {};
   cart: Plan
-  
+  price = 0
+  name = ""
+  numLines = 0
 
   constructor(private planService: PlanService, private cartService : CartService){
     this.cart = new Plan();
 
   
   if(cartService.a === "true"){
-    this.planList = planService.savePlanA
     this.cart = cartService.cartA
+    this.price = cartService.cartA.planPrice
+    this.name = cartService.cartA.planName
+    this.numLines = cartService.cartA.planNumLines
   }
    if (cartService.b ==="true"){
-    this.planList = planService.savePlanB
     this.cart = cartService.cartB
-
+    this.price = cartService.cartB.planPrice
+    this.name = cartService.cartB.planName
+    this.numLines = cartService.cartB.planNumLines
   }
   if (cartService.c === "true"){
-    this.planList = planService.savePlanC
     this.cart = cartService.cartC
-
+    this.price = cartService.cartC.planPrice
+    this.name = cartService.cartC.planName
+    this.numLines = cartService.cartC.planNumLines
   }
 
   

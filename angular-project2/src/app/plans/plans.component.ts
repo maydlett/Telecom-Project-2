@@ -25,15 +25,13 @@ export class PlansComponent implements OnInit {
 		})
 
 
-
 	}
 
 
-
   listA = {  
-         "planName" : "Ultimate Plan",
-         "planPrice" : 455.00,
-        "planNumLines" : 1,
+    "planName" : "Ultimate Plan",
+    "planPrice" : 455.00,
+    "planNumLines" : 1,
     	};
  
   planA(){
@@ -43,17 +41,13 @@ export class PlansComponent implements OnInit {
     this.cartService.b = "false";
     this.cartService.c = "false";
 
-        console.log( JSON.stringify(this.planService.savePlanA))
-
-
-       
-
   }
 
   listB = {  
-    "planName" : "hhhhh",
-    "planPrice" : 455.00,
-   "planNumLines" : 1,
+    "planName" : "Normal Plan",
+  "planPrice" : 300.00,
+  "planNumLines" : 1,
+
  };  
   planB(){
     console.log("clicked B")
@@ -61,21 +55,19 @@ export class PlansComponent implements OnInit {
     this.cartService.a = "false";
     this.cartService.b = "true";
     this.cartService.c = "false";    
-    console.log( JSON.stringify(this.planService.savePlanB))
   }
 
 
   listC = {  
-    "planName" : "nnnnnnn",
-    "planPrice" : 455.00,
-   "planNumLines" : 1,
+    "planName" : "Cheap Plan",
+    "planPrice" : 100.00,
+    "planNumLines" : 1,
  };  
   planC(){
     console.log("clicked C")
     this.cartService.a = "false";
     this.cartService.b = "false";
     this.cartService.c = "true";    
-    console.log( JSON.stringify(this.planService.savePlanC))
 
   }
 
