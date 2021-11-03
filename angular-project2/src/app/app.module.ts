@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { DevicesComponent } from './devices/devices.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
