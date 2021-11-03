@@ -8,6 +8,7 @@ import { PlansComponent } from './plans/plans.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { DevicesComponent } from './devices/devices.component';
+import { AddComponent } from './add/add.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { DevicesComponent } from './devices/devices.component';
     PlansComponent,
     HomeComponent,
     CartComponent,
-    DevicesComponent
+    DevicesComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

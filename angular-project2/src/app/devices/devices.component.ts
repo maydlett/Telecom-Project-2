@@ -15,21 +15,9 @@ export class DevicesComponent implements OnInit {
 
   deviceList!: Device[];
   planList!: Plan[];
-
-  
-  closeResult = '';
-
-
+  name: any
 
   constructor(private deviceService: DeviceService, private planService : PlanService   ){}
-
-
-
-  
-
-
-
-
 
 
   ngOnInit(): void {
@@ -46,15 +34,8 @@ export class DevicesComponent implements OnInit {
 
 	}
 
-
-
-
-
-  addDevice(){
-console.log("add clicked")
-}
   remove(){
-    console.log("remove clicked")
+    
 
   }
 

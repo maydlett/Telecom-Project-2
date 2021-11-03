@@ -40,15 +40,10 @@ export class CartComponent implements OnInit {
     this.numLines = cartService.cartC.planNumLines
   }
 
-  
 
   }
 
-  ngOnInit(): void {
-
-
-	}
-
+  ngOnInit(): void {}
 
      done(){
          this.cartService.savePlan(this.cart).subscribe(result => {
@@ -56,11 +51,5 @@ export class CartComponent implements OnInit {
           })
   }
 
-      
-
-    
-
   
-  
-
 }
