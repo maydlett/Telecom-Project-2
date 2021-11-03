@@ -35,13 +35,15 @@ public class Device {
 		this.deviceName = deviceName;
 		this.deviceType = deviceType;
 		this.planId = planId;
+		this.deviceNumber = deviceNumber;
 	}
 
-	public Device(String deviceName, String deviceType, int planId) {
+	public Device(String deviceName, String deviceType, int planId, String deviceNumber) {
 		super();
 		this.deviceName = deviceName;
 		this.deviceType = deviceType;
 		this.planId = planId;
+		this.deviceNumber = deviceNumber;
 	}
 
 	public Device() {
