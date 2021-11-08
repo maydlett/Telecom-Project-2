@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>User dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="user">
+      <div class="user overflow-auto">
+        <h1>Account Plans</h1>
+        <div style="min-width: 600px">
+          <div class="row contacts">
+            <div class="col user-to">
+              <td class="addClick">
+                Add New Plan
+                <i
+                  class="fa fa-tag"
+                  width="15"
+                  height="15"
+                  title="Add Plan"
+                  routerLink="/plans"
+                ></i>
+              </td>
+            </div>
+          </div>
+          <table cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="text-left">Plan Name</th>
+                <th class="text-right">Number of Lines</th>
+                <th class="text-right">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let plan of planList">
+                <td class="no">{{ plan.planName }}</td>
+                <td class="unit">{{ plan.planNumLines }}</td>
+                <td class="total">{{ plan.planPrice }}</td>
+                <td class="actions">
+                  <i
+                    class="fa fa-mobile"
+                    title="Edit Devices"
+                    (click)="
+                      view(plan.planId, plan.planName, plan.planNumLines)
+                    "
+                    routerLink="/devices"
+                  ></i>
+                </td>
+                <td class="actions">
+                  <i
+                    class="fa fa-close"
+                    title="Remove"
+                    (click)="remove(plan.planId)"
+                    routerLink="/home"
+                  ></i>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="2">SUBTOTAL</td>
+                <td>${{ subTotal }}</td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="2">TAX 5%</td>
+                <td>${{ taxTotal }}</td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="2">Monthly Cost</td>
+                <td>${{ grandTotal }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="91910809335008911" datatype="html">
+        <source>Phone Plans</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8462898146571532691" datatype="html">
+        <source>Basic Plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="140527784903715537" datatype="html">
+        <source>Number of Devices: <x id="INTERPOLATION" equiv-text="{{ basicPlan.planNumLines }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3832267015476903627" datatype="html">
+        <source>5G Included</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="224848920228214997" datatype="html">
+        <source>Unlimited talk, text &amp; data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2796244238030948571" datatype="html">
+        <source>25GB of Premium Data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1842334189124858449" datatype="html">
+        <source>Standard Plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1675079213722551310" datatype="html">
+        <source> Number of Devices: <x id="INTERPOLATION" equiv-text="{{ standardPlan.planNumLines }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1329341678435859580" datatype="html">
+        <source>Family Plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/plans/plans.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
